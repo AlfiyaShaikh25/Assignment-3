@@ -1,0 +1,15 @@
+<svg id="dashboard" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Path_129693" data-name="Path 129693" d="M0,0H24V24H0Z" fill="none"/>
+  <g id="Group_172702" data-name="Group 172702" transform="translate(0.25 0.25)">
+    <path id="Path_129738" data-name="Path 129738" d="M8.917,9.6A5.7,5.7,0,0,0,6.35,9a5.6,5.6,0,0,0-5.6,4.9" transform="translate(0 -0.55)" fill="none" stroke="#0745f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <circle id="Ellipse_8146" data-name="Ellipse 8146" cx="3.15" cy="3.15" r="3.15" transform="translate(3.2 0.75)" fill="none" stroke="#0745f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <circle id="Ellipse_8147" data-name="Ellipse 8147" cx="2.45" cy="2.45" r="2.45" transform="translate(13 0.75)" fill="none" stroke="#0745f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_129739" data-name="Path 129739" d="M19.379,8.15a4.15,4.15,0,0,0-6.216,0" transform="translate(-0.827 -0.4)" fill="none" stroke="#0745f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <g id="Group_172703" data-name="Group 172703" transform="translate(9.096 9.669)">
+      <rect id="Rectangle_148516" data-name="Rectangle 148516" width="12.648" height="9.182" rx="0.75" transform="translate(0 2.9)" fill="none" stroke="#0745f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_88754" data-name="Line 88754" x2="12.6" transform="translate(0.054 5.781)" fill="none" stroke="#0745f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_88755" data-name="Line 88755" y2="2.1" transform="translate(6.354 5.781)" fill="none" stroke="#0745f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_129736" data-name="Path 129736" d="M18.366,10.75H15.95A1.45,1.45,0,0,0,14.5,12.2v1.45h5.316V12.2A1.45,1.45,0,0,0,18.366,10.75Z" transform="translate(-10.309 -10.75)" fill="none" stroke="#0745f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

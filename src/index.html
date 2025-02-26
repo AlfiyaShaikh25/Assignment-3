@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styels.css">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Assignment-3</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        @media screen and (max-width:992px) {
+        
+            .side-bar {
+                width: 1px !important;
+
+            }
+
+            .form-area {
+                margin-left: 20px;
+            }
+
+           
+
+
+
+
+        }
+
+
+        @media screen and (max-width:600px) {
+           .formheading {
+            display: block !important;
+           }
+
+
+
+
+        }
+
+        @media screen and (max-width:380px) {
+           .formheading {
+           margin-top: 50px;
+           }
+
+
+
+
+        }
+
+        
+        @media screen and (max-width:369px) {
+           .formheading {
+           margin-top: 90px !important;
+           }
+
+
+
+
+        }
+
+        @media (max-width: 346px) {
+    .btn {
+        font-size: 12px; /* Reduce text size */
+        padding: 8px 10px; /* Reduce padding */
+    }
+    .btn img {
+        width: 16px; /* Scale down icons */
+        height: auto;
+    }
+}
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="bodycolor">
+
+
+        <nav class="navbar navbar-expand-lg fixed-top bg-white  shadow-sm p-0  ">
+
+            <div class="container-fluid pt-0 pb-0     ">
+
+                <button type="button" class="btn bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="assets/menu.png" alt="Menu" class="custom-toggle-img">
+                </button>
+
+
+
+
+                <!-- Logo Section -->
+                <div class="div-logo-img  ">
+                    <img class="" src="assets/logo.svg" alt="logo-image"
+                        style="margin: 13px 120px 0px 10px; width: 140px; height: 54.13px;">
+                </div>
+
+                <!-- Navbar Toggle Button for Mobile View -->
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsing Navbar Content for Large Screens -->
+                <div class="collapse navbar-collapse d-none d-lg-flex align-items-center justify-content-center"
+                    id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto d-flex flex-column">
+                        <div class="nav-title ms-2">
+                            <h3 id="paragraph" class="mb-0">Create New Learning Path</h3>
+                            <a href="#" class="navbar-link mb-0">Learning paths > Learning Path > Add Team Member</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Section with Profile & Settings -->
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="assets/flg.png" class="" style="width:27px; height:27px; margin-right:10px;">
+                        <div class="country-name ">EN(UK) <i class="bi bi-chevron-down"></i></div>
+                        <i class="bi bi-bell"></i>
+                        <div class="vr mt-3" style="margin-left: 10px; height: 23px; "></div>
+                        <i class="bi bi-gear"></i>
+                        <div class="vr mt-3 " style="margin-left: 15px; height: 23px;"></div>
+                        <img src="assets/profilecrop.png" class="bi rounded-circle " alt="profile-icon"
+                            style="object-fit: cover; width: 45px; height: 45px; align-self: center; margin-left: 15px;">
+                        <div class="profile-name  mr-4">
+                            <h4 class="mb-0 mt-1">Megan Roberts</h4>
+                            <p>Admin</p>
+                        </div>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+
+                </div>
+
+                <!-- Offcanvas Navbar for Small and Medium Screens -->
+                <div class="offcanvas offcanvas-top d-lg-none d" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <div class="navbar-nav me-auto">
+                            <div class="nav-title">
+                                <h3 id="paragraph" class="mb-0">Create New Learning Path</h3>
+                                <a href="#" class="navbar-link mb-0">Learning paths > Learning Path > Add Team
+                                    Member</a>
+                            </div>
+                        </div>
+
+                        <!-- Right Section in Offcanvas -->
+                        <div class="d-flex align-items-center justify-content-end ">
+                            <img src="assets/flg.png" class="" style="width:27px; height:27px; margin-right:10px;">
+                            <div class="country-name ">EN(UK) <i class="bi bi-chevron-down"></i></div>
+                            <i class="bi bi-bell"></i>
+                            <div class="vr mt-3" style="margin-left: 10px; height: 23px; "></div>
+                            <i class="bi bi-gear"></i>
+                            <div class="vr mt-3 " style="margin-left: 15px; height: 23px;"></div>
+                            <img src="assets/profilecrop.png" class="bi rounded-circle " alt="profile-icon"
+                                style="object-fit: cover; width: 45px; height: 45px; align-self: center; margin-left: 15px;">
+                            <div class="profile-name  mr-4">
+                                <h4 class="mb-0 mt-1">Megan Roberts</h4>
+                                <p>Admin</p>
+                            </div>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="d-flex">
+            <!--Side-bar-->
+            <div class="side-bar ">
+
+
+
+                <div class="  offcanvas_size offcanvas-lg offcanvas-start mt-3" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasResponsiveLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button-1 accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <img class="sidebar-menu-img" src="assets/dashboard.svg"
+                                            data-default-src="assets/dashboard.svg" data-active-src="assets/menu-2.png"
+                                            alt="dashboard-icone">
+                                        <div class="accordion-button-text">DASHBOARD</div>
+
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        <img class="sidebar-menu-img" src="assets/teams.png"
+                                            data-default-src="assets/teams.png" data-active-src="assets/team-blue.svg"
+                                            alt="dashboard-icone">
+                                        <div class="accordion-button-text">
+                                            TEAM MEMBERS
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        <img class="sidebar-menu-img" src="assets/project.png" alt="dashboard-icone"
+                                            data-default-src="assets/project.png"
+                                            data-active-src="assets/project-blue.png">
+                                        <div class="accordion-button-text">
+                                            PROJECTS
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        <img class="sidebar-menu-img" src="assets/client.png"
+                                            data-default-src="assets/client.png"
+                                            data-active-src="assets/dashboard-blue.svg" alt="dashboard-icone">
+                                        <div class="accordion-button-text">
+                                            CLIENTS
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        <img class="sidebar-menu-img" src="assets/learning.svg"
+                                            data-default-src="assets/learning-blue.svg"
+                                            data-active-src="assets/learning.svg" alt="dashboard-icone">
+                                        <div class="accordion-button-text  text-black">
+                                            LEARNING PATHS
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse show"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="learning-list list-unstyled ">
+                                            <li class="text-body-secondary "><img class="assets/list-img "
+                                                    src="assets/learning-path-2.svg" alt="learning path">
+                                                Learning Path</li>
+                                            <li class="mt-3 text-body-secondary"><img class="assets/list-img "
+                                                    src="assets/courses.svg" alt="learning path">
+                                                Courses</li>
+                                            <li class="mt-3 text-body-black"> <img class="assets/list-img"
+                                                    src="assets/skill-sets-blue.svg" alt="learning path">
+                                                Skill Sets</li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Form-area -->
+            <div class="form-area">
+                <div class="formheading  d-flex justify-content-between  ">
+                    <div class="search-lable p-2 ">
+                        <p class="mb-0 navp  d-sm-block">Search Skills</p>
+                        
+                        <input class="mt-2  d-sm-block form-control" type="text" placeholder="Search">
+                        
+                    </div>
+
+                    <div class="d-flex p-0 gap-3 justify-content-center align-items-center">
+                        <button type="button" class="btn btn-outline-primary p-2 bs-border-box icon align-items-center justify-content-center" ><img class="mx-2 mb-1"
+                                src="assets/delete-btn.svg" alt="" srcset="">DELETE</button>
+                        <button type="button" class="btn btn-primary  p-2"> <img src="assets/createskills.svg"
+                                class="me-2" alt="">CREATE NEW SKILLS</button>
+                    </div>
+
+                </div>
+
+                <!-- column Grid -->
+                <div class=" container mt-4">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 g-2">
+
+
+                        <div class="col ">
+                            <div
+                                class="col-12 d-flex bg-white border rounded justify-content-start align-items-center p-2 overflow-hidden ">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/git.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text flex-grow-1  ms-2">Git</span>
+                                <div class="icons d-flex align-items-center justify-content-center ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0p-0container d-flex text-center position-relative p-0  justify-content-center align-items-center">
+                                        <img class="img-delete "  src="assets/delete.png" alt="Delete" 
+                                            style="height: 20px; width: 20px;"    >
+                                            
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele" src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center p-0  position-relative  justify-content-center align-items-center">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div
+                                class="col-12 carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden ">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/ASP.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">ASP.Net</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div
+                                class=" carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/Cshrap.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">C#</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/javascript.svg" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">JavaScript</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/html.jpg" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">HTML</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/python.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Python</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class=" carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/css.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">CSS</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/java.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Java</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/bootstrap.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Bootstarp</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/react.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">ReactJS</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/typescript.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Typescript</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden ">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/Angular.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Angular JS</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/nodejs.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Node.JS</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/machine-learning.png" alt="Image" class="rounded" width="32"
+                                    height="32">
+                                <span class="card-text  ms-2">Machine Learning</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                       
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/AI.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Artificial Intelligence</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/deep-learning.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Deep Learning</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/DATA analyist.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Data Analysis</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/SQL.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">SQL</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/my-sql.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">MySQL</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-auto d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/DBMS.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Database Management</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center p-1 position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom" "   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center p-1 position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/mongodb.svg" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">MongoDB</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/SQL server.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">SQL Server</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom" "   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/Apache_kafka.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Apache Kafka</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/postgress.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">PostgreSQL</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/db.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Oracle SQL</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/docker.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Docker</span>0
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/kubernetes.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Kubernetes</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/jira.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">JIRA</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/apitesting.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">API Testing</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative overflow-hidden">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden ">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/database-programing.png" alt="Image" class="rounded" width="32"
+                                    height="32">
+                                <span class="card-text  ms-2">Database Programing</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/cypress.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Cypress.io</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/Automation testing.png" alt="Image" class="rounded" width="32"
+                                    height="32">
+                                <span class="card-text  ms-2">Automation Testing</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/github.svg" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">GitHub</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/confluence.svg" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Confluence</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/devop.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">DevOps</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div
+                                class="carddiv col-12 d-flex bg-white border rounded justify-content-start align-items-center overflow-hidden">
+                                <input type="checkbox" class="form-check-input me-2 ms-1">
+                                <img src="assets/jenkins.png" alt="Image" class="rounded" width="32" height="32">
+                                <span class="card-text  ms-2">Jenkins</span>
+                                <div class="icons d-flex ">
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" src="assets/delete.png" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Detele"   src="assets/delete-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="img-hover justify-content-center align-items-center  p-0 p-0container d-flex text-center position-relative ">
+                                        <img class="img-delete" data-toggle="tooltip" data-placement="top" title="Delete" src="assets/edit.svg" alt="Delete"
+                                            style="height: 20px; width: 20px;">
+                                        <div
+                                            class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <img   class="img-delete-red" data-bs-toggle="tooltip" data-bs-placement="bottom"   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"   src="assets/edit-blue.svg" alt="Delete">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 align-items-end justify-content-end">
+                    <div class="pagination align-items-end justify-content-end ">
+
+                        <div class="page-numbers">
+                            <button class="btn-page"><i class="bi bi-chevron-double-left"></i></button>
+                            <button class="btn-page"><i class="bi bi-chevron-left"></i></button>
+                            <button class="btn-page btn-selected">1</button>
+                            <button class="btn-page ">2</button>
+                            <button class="btn-page ">3</button>
+
+                            <button class="btn-page">...</button>
+                            <button class="btn-page">90</button>
+                            <button class="btn-page"><i class="bi bi-chevron-right"></i></button>
+                            <button class="btn-page"><i class="bi bi-chevron-double-right"></i></button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

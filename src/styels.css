@@ -1,0 +1,353 @@
+body {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.bodycolor {
+    background-color: #8ca2c023;
+}
+
+.navbar {
+    background-color: #FFFFFF !important;
+
+
+}
+
+.navbar .container-fluid {
+    padding-top: 20px;
+    /* Adjust padding to control height */
+    padding-bottom: 20px;
+    /* Adjust padding to control height */
+}
+
+.navbar-nav p {
+    font-size: 18px;
+    font-family: Poppins;
+    color: #323232;
+
+}
+
+.navbar-nav a {
+
+    color: #6C757D;
+    text-decoration: none;
+}
+
+.profile-name h4 {
+    font-size: 16px;
+    font-family: Poppins;
+    color: #323232;
+    margin-left: 10px;
+}
+
+.profile-name p {
+    font-size: 14px;
+    font-family: Poppins;
+    color: #323232;
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+.nav-right {
+    align-items: center;
+}
+
+.side-bar {
+    width: 290px !important;
+    height: 100%;
+    /* Subtract navbar height */
+    position: fixed;
+    top: 80px;
+    /* Match navbar height */
+    left: 0;
+    background: #fff;
+    z-index: 1040;
+    /* Ensure it's below the navbar */
+    border-right: 1px solid #ddd;
+}
+
+.div-logo-img {
+    width: 290px;
+    height: 80px;
+}
+
+.nav-title {
+    margin-left: 0px;
+    font-family: Poppins;
+}
+
+.nav-title h3 {
+    font-size: 18px;
+
+}
+
+.nav-title a {
+    font-size: 12px;
+
+}
+
+.accordion-header {
+    align-items: center;
+    align-content: center;
+
+
+}
+
+.sidebar-menu-img {
+    height: 24px;
+    width: 24px;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 14px;
+
+}
+
+.accordion-1 {
+    height: 70px;
+}
+
+.accordion-button-text {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #797A7A;
+}
+
+.accordion {
+    width: 290px;
+}
+
+.bi {
+    margin-left: 10px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.list-img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.accordion-body ul {
+    margin-left: 50px;
+    font-size: 16px;
+    font-family: Poppins;
+
+}
+
+.offcanvas_size {
+    width: 290px;
+    height: 100%;
+}
+
+.btn-sidebar {
+
+    height: 50px;
+    width: 100px;
+    color: #303030;
+}
+
+.bt-grp {
+    width: 64px !important;
+    height: 23px !important;
+}
+
+.custom-toggle-img {
+    width: 40px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+.navbar-toggler {
+    padding: 5px;
+    /* Reduce padding if needed */
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    /* Removes Bootstrap's default focus outline */
+}
+
+.accordion-button {
+    color: black;
+    /* Default text color */
+    transition: color 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) .accordion-button-text {
+    color: rgb(0, 4, 255) !important;
+    /* Change to your desired color */
+}
+
+.form-area{
+    margin-top:80px;
+    margin-left:290px;
+    margin-right: 20px;
+   width: 100%;
+   background-color:#e3effc34;
+}
+.btngroup{
+
+    margin-left: auto;
+}
+.form-check{
+    background-color: white;
+    height: 60px;
+}
+
+.img-delete-red{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+   
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    border-radius: 5px;
+    
+
+    display: block;
+}
+  
+.overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 25px !important;
+    height: 25px !important;
+   
+}
+.img-hover:hover .overlay {
+    opacity: 1;
+}
+.img-grid{
+    width: 32px;
+    height: 32px;
+}
+.form-label{
+     
+    font-family: poppins;
+    font-size: 14px;
+}
+.form-control{
+   background-color: #F9F9FA;
+   font-family: poppins;
+   font-size: 14px;
+   color: #BABABA;
+}
+.btn div{
+    font-size: 14px;
+    font-family: Poppins;
+}
+.form-check-label{
+    font-size: 14px;
+    font-family: Poppins;
+}
+
+.carddiv{
+    height: 50px;
+    /* width: 18rem; */
+   }
+
+    .img-hover {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .card-text {
+
+        margin-left: 5px;
+        font-size: 14px;
+        font-family: Poppins;
+    }
+    .form-check-input{
+        height: 20px;
+        width: 20px;
+    }
+   .icons {
+       margin-left: auto;
+
+    }
+
+
+     
+  body,
+  button {
+    font-family: "Inter", sans-serif;
+    color: #343a40;
+    line-height: 1;
+  }
+  
+  .pagination,
+  .page-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-family: poppins;
+    font-size: 6px;
+   
+    margin-left: auto;
+  }
+  
+  .pagination {
+    margin-top: 18px;
+  }
+  
+  .btn-nav,
+  .btn-page {
+    border-radius: 50%;
+    background-color:#F4F5F8;
+    cursor: pointer;
+
+    
+  }
+  
+  .btn-nav {
+    padding: 8px;
+  }
+  
+  .btn-nav {
+    width: 34px;
+    height: 34px;
+    border: 1.5px solid #0745F9;
+    color: #0745F9;
+  }
+  
+  .btn-nav:hover,
+  .btn-page:hover {
+    background-color: #0745F9;
+    color: #fff;
+  }
+  
+  .btn-page {
+    border: none;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .btn-selected {
+    background-color: #0745F9;
+    color: #fff;
+  }
+
+  .formheading{
+   margin-top: 2%;
+  }
+ .search-lable{
+    font-family: poppins;
+    font-size: 16px;
+    margin-left:10px;
+  }
+
+  .btn{
+    font-family: Poppins;
+    font-size: 16px;
+    height: 42px !important;
+  }
